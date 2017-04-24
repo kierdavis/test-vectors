@@ -1,0 +1,26 @@
+# General button sync test.
+<PinDef>
+A13,A14,A15,A16,Q6
+</PinDef>
+<TestVector>
+# Clock nReset Go Stop Run
+# Reset the circuit
+0 0 0 0 0
+0 1 0 0 0
+C 1 0 0 0
+# Test Stop does nothing when output already 0
+C 1 0 1 0
+C 1 0 0 0
+# Test Go sets output to 1
+C 1 1 0 1
+C 1 0 0 1
+# Test Go does nothing when output already 1
+C 1 1 0 1
+C 1 0 0 1
+# Test Stop sets output to 0
+C 1 0 1 0
+C 1 0 0 0
+C 1 1 0 1
+# Test reset sets output to 0
+C 0 0 0 0
+</TestVector>

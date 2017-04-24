@@ -1,0 +1,16 @@
+# General ALU test.
+<PinDef>
+A4,A3,A8,A7,A6,A5,A12,A11,A10,A9,Q5,Q4,Q3,Q2
+</PinDef>
+<TestVector>
+# F  X    Y    XY
+# 01 0123 0123 0123
+
+# General functionality.
+  00 0011 0101 1000
+  00 1011 0110 0001
+  01 0101 0011 0010
+  01 0011 0101 1110
+  10 0101 0000 1010
+  11 0101 1010 0000
+</TestVector>
