@@ -1,0 +1,31 @@
+<PinDef>
+A23,A22,A21,A20,Q17,Q18,Q19,Q20,Q21,Q22,Q23
+</PinDef>
+<TestVector>
+# D3 D2 D1 D0  nA nB nC nD nE nF nG
+
+# Test D3 stuck at 0,1 via nG
+0000 xxxxxx1
+1000 xxxxxx0
+# Test D2 stuck at 0,1 via nG
+0000 xxxxxx1
+0100 xxxxxx0
+# Test D1 stuck at 0,1 via nG
+0000 xxxxxx1
+0010 xxxxxx0
+# Test D0 stuck at 0,1 via nG
+1110 xxxxxx0
+1111 xxxxxx1
+# Test D3 stuck at 0,1 via nF
+0001 xxxxx1x
+1001 xxxxx0x
+# Test D2 stuck at 0,1 via nE
+0000 xxxx0xx
+0100 xxxx1xx
+# Test D1 stuck at 0,1 via nE
+0100 xxxx1xx
+0110 xxxx0xx
+# Test D0 stuck at 0,1 via nE
+0010 xxxx0xx
+0011 xxxx1xx
+</TestVector>
