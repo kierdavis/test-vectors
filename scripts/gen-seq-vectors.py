@@ -1,4 +1,4 @@
-num_vectors = 20
+num_vectors = 1000
 
 print "# Exhaustive test vector for sequencer."
 print "# Automatically generated."
