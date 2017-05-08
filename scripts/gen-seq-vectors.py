@@ -14,7 +14,7 @@ def print_row(clock, reset_n, run_in, digits, dp, d):
   s = str(clock) + str(reset_n) + " "
   s += str(run_in) + " "
   s += str(digits[0]) + str(digits[1]) + str(digits[2]) + str(digits[3]) + str(digits[4]) + " "
-  s += str(dp) + " "
+  s += str(1-dp) + " "
   s += bit(d, 3) + bit(d, 2) + bit(d, 1) + bit(d, 0)
   print s
 
