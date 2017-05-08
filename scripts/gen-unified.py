@@ -10,7 +10,7 @@ def getline(f):
 
 print "# Auto generated unified vectors"
 print "<PinDef>"
-print ",".join(["A%d"%i for i in range(24)] + ["Q%d"%i for i in range(24)])
+print ",".join(["A%d"%i for i in range(24) if i not in (17,19)] + ["Q%d"%i for i in range(24)])
 print "</PinDef>"
 print "<TestVector>"
 
@@ -31,7 +31,8 @@ for file in sys.argv[1:]:
 					d[pin] = line[i]
 				outline = ""
 				for i in range(24):
-					outline += d.get("A%d"%i, "0")
+					if i not in (17,19):
+						outline += d.get("A%d"%i, "0")
 				outline += " "
 				for i in range(24):
 					outline += d.get("Q%d"%i, "X")
