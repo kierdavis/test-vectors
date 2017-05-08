@@ -7,8 +7,20 @@ A1,A2,Q1
 </PinDef>
 
 <TestVector>
+# nResetOSc EnableOsc OscOut
 0 1 X
 0 0 0
 0 1 0
+1 0 0
+1 0 0
+1 0 0
+1 0 0
+1 0 0
+1 0 0
+1 0 0
+1 0 0
+1 0 0
+1 0 0
+1 0 0
 1 1 X
 </TestVector>

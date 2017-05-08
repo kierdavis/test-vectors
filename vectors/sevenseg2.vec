@@ -1,0 +1,36 @@
+#TEAMF_DESIGN
+#test vector for functionality of seven segment decoder,
+#through the numbers 0-9, after which we dont care as they should never be called.
+
+<PinDef>
+A23,A22,A21,A20,Q17,Q18,Q19,Q20, Q21,Q22,Q23
+</PinDef>
+
+<TestVector>
+#
+#	--A--
+#	F   B
+#	--G--
+#	E   C
+#	--D--
+#
+# D0 D1 D2 D3	nA nB nC nD nE nF nG
+
+  0  0  0  0 	0  0  0  0  0  0  1  
+  0  0  0  1 	1  0  0  1  1  1  1 
+  0  0  1  0 	0  0  1  0  0  1  0 
+  0  0  1  1 	0  0  0  0  1  1  0 
+  0  1  0  0 	1  0  0  1  1  0  0 
+  0  1  0  1 	0  1  0  0  1  0  0 
+  0  1  1  0 	0  1  0  0  0  0  0 
+  0  1  1  1 	0  0  0  1  1  1  1 
+  1  0  0  0 	0  0  0  0  0  0  0 
+  1  0  0  1 	0  0  0  0  1  0  0 
+  1  0  1  0 	X  X  X  X  X  X  X 
+  1  0  1  1 	X  X  X  X  X  X  X 
+  1  1  0  0 	X  X  X  X  X  X  X
+  1  1  0  1 	X  X  X  X  X  X  X
+  1  1  1  0 	X  X  X  X  X  X  X
+  1  1  1  1 	X  X  X  X  X  X  X
+
+</TestVector>
