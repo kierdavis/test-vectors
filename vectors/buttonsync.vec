@@ -12,15 +12,16 @@ C 1 0 0 0
 C 1 0 1 0
 C 1 0 0 0
 # Test Go sets output to 1
-C 1 1 0 1
+C 1 1 0 X
 C 1 0 0 1
 # Test Go does nothing when output already 1
 C 1 1 0 1
 C 1 0 0 1
 # Test Stop sets output to 0
-C 1 0 1 0
+C 1 0 1 X
 C 1 0 0 0
-C 1 1 0 1
+C 1 1 0 X
+C 1 0 0 1
 # Test reset sets output to 0
 C 0 0 0 0
 </TestVector>
