@@ -1,0 +1,14 @@
+#TEAMF_DESIGN
+#test vector for functionality of seven segment decoder,
+#through the numbers 0-9, after which we dont care as they should never be called.
+
+<PinDef>
+A1,A2,Q1
+</PinDef>
+
+<TestVector>
+0 1 X
+0 0 0
+0 1 0
+1 1 X
+</TestVector>
