@@ -22,8 +22,8 @@ print "# initialisation"
 print_row(0, 0, 0, [1,0,0,0,0], 1, 0)
 print_row(0, 1, 0, [1,0,0,0,0], 1, 0)
 print_row("C", 1, 0, [0,1,0,0,0], 0, 0)
-print_row("C", 1, 0, [0,0,1,0,0], 1, 0)
 print_row("C", 1, 0, [0,0,0,1,0], 0, 0)
+print_row("C", 1, 0, [0,0,1,0,0], 1, 0)
 
 digit1 = digit2 = digit3 = digit4 = 0
 
@@ -43,13 +43,13 @@ for i in range(num_vectors/4):
   print "# stopwatch display = %d%d%d%d" % (digit1, digit2, digit3, digit4)
   print_row("C", 1, 1, [1,0,0,0,0], 1, digit1)
   print_row("C", 1, 1, [0,1,0,0,0], 0, digit2)
-  print_row("C", 1, 1, [0,0,1,0,0], 1, digit3)
   print_row("C", 1, 1, [0,0,0,1,0], 0, digit4)
+  print_row("C", 1, 1, [0,0,1,0,0], 1, digit3)
 
 print "# test RunIn = 0"
 print_row("C", 1, 0, [1,0,0,0,0], 1, digit1)
 print_row("C", 1, 0, [0,1,0,0,0], 0, digit2)
-print_row("C", 1, 0, [0,0,1,0,0], 1, digit3)
 print_row("C", 1, 0, [0,0,0,1,0], 0, digit4)
+print_row("C", 1, 0, [0,0,1,0,0], 1, digit3)
 
 print "</TestVector>"
